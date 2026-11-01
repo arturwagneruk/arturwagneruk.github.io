@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Software and applications developed by Artur Wagner."
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Applications | Artur Wagner's Website</title>
     <link rel="stylesheet" href="global.css" />
@@ -26,42 +29,41 @@
     </p>
     <ul>
       <li>Create system-level vaults.</li>
-      <li>Create folders and/or files withing the vault.</li>
+      <li>Create folders and/or files within the vault.</li>
       <li>Edit contents of these files.</li>
       <li>Everything is encrypted apart from the file structure.</li>
     </ul>
     <p>* Encrypting: File content, File name, Folder name</p>
 
-    <div
-      style="
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        gap: 8px;
-      "
-    >
+    <div class="gallery">
       <img
         src="/img/android_encryption_assistant_showcase_1.png"
+        alt="AEA Screenshot 1"
         width="100%"
       />
       <img
         src="/img/android_encryption_assistant_showcase_2.png"
+        alt="AEA Screenshot 2"
         width="100%"
       />
       <img
         src="/img/android_encryption_assistant_showcase_3.png"
+        alt="AEA Screenshot 3"
         width="100%"
       />
       <img
         src="/img/android_encryption_assistant_showcase_4.png"
+        alt="AEA Screenshot 4"
         width="100%"
       />
     </div>
 
     <video
       controls
+      preload="none"
       src="/vid/react-cordova-censored-android-demo.webm"
       width="100%"
-      alt="Application Demo Video"
+      aria-label="Application Demo Video"
     ></video>
     <p>
       <a> Diary App for Diabetes Type 1 [2022]</a>
@@ -73,15 +75,9 @@
       individuals with diabetes type 1. The application assists individuals in
       their day to day as they can easily track doses and activities on their
       mobile device. <br />
-      - Build with React Native.
+      - Built with React Native.
     </p>
-    <div
-      style="
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        gap: 8px;
-      "
-    >
+    <div class="gallery">
       <img
         src="/img/diabetes_app_react_native_showcase_1.png"
         alt="Application Screenshot 1"
@@ -113,11 +109,11 @@
       <br />
       A discord bot written in TypeScript to be run with Node. I have not run it
       since 2021, so it is possibly broken, but updating it should not be a
-      hassle as the Discord package should not change as ofter... I think...
+      hassle as the Discord package should not change as often... I think...
     </p>
     <ul>
       <li>Allows playing music.</li>
-      <li>Allows send images.</li>
+      <li>Allows sending images.</li>
       <li>Allows a detailed config file for high customization!</li>
       <li>Displays system information.</li>
     </ul>
@@ -125,7 +121,7 @@
       <a> Python Terminal File Editor [2019] </a>
       (<a href="https://github.com/ArturWagnerUK/CMD">Source</a>)
       <br />
-      Back in the day when I learned Python, I always wanted to have an editor.
+      Back in the day when I learned Python, I always wanted to have an editor
       that I saw Linux users use. Now I know they were Vim and Nano, but at the
       time I did not. Knowing this, I wanted to remake them with Python. This
       was my attempt at this.
@@ -140,19 +136,20 @@
       width="100%"
       alt="File Editor Showcase Screenshot"
     />
-    <p><center>Using the editor to edit it's own source files!</center></p>
+    <p style="text-align: center">
+      Using the editor to edit its own source files!
+    </p>
     <p>
       <a> Code Archive [2018-2020] </a>
       (<a href="https://github.com/ArturWagnerUK/Projects-2018-2020">Source</a>)
       <br />
-      Anything I did during my GCSE's and a bit afterwards can be found here.
+      Anything I did during my GCSEs and a bit afterwards can be found here.
       Not all, of course, because most of it got lost in between system resets
       and USB wipes...
     </p>
     <ul>
       <li>Mix of Python, JS, Java and others.</li>
       <li>Some client - server code</li>
-      <li>Has themes!</li>
     </ul>
   </body>
 </html>
