@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Kroniki Engine: an early-stage visual novel and RPG engine by Artur Wagner."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kroniki Engine | Artur Wagner's Website</title>
+    <link rel="stylesheet" href="./global.css" />
+  </head>
+  <body>
+    <h1>(<a href="./index.html">Return</a>) Kroniki Engine</h1>
+    <p>
+      <strong>Status: early development.</strong> The engine works and there is
+      a playable demo, but APIs, content folders and save formats are still
+      changing between versions and there are rough edges left to smooth out.
+      Development is active and ongoing, with the goal of covering everything
+      expected from a game engine of this kind.
+    </p>
+    <p>
+      (<a href="https://kroniki.arclockproject.org/demo/">Play the demo</a>)
+      (<a href="https://kroniki.arclockproject.org/">Read the guide</a>)
+      (<a href="https://github.com/ArcLockProject/kroniki">Source</a>)
+    </p>
+    <hr />
+    <h1>What is it?</h1>
+    <p>
+      An engine for visual novels and story-driven 2D RPGs. I wanted something
+      where writing a scene feels like writing a script, while still having a
+      world to walk around in when a game needs one. Maps can also be turned
+      off entirely for a pure visual novel.
+    </p>
+    <ul>
+      <li>
+        <strong>Stack:</strong> TypeScript, React + Material UI for screens,
+        PixiJS for the map, zustand for state, Vite, Vitest and Biome.
+      </li>
+      <li>
+        <strong>Platforms:</strong> browser, desktop (Electron, Windows and
+        Linux) and Android (Capacitor), with keyboard, gamepad and touch input.
+      </li>
+      <li>
+        <strong>Content as code:</strong> every item, map, quest or character
+        is a folder with a typed definition. A code generator builds a registry
+        from the folders, so ids get autocomplete and a typo is a TypeScript
+        error.
+      </li>
+      <li>
+        <strong>Writing:</strong> scenes can be written as plain-text
+        <code>.vn</code> scripts, with an editor extension for highlighting,
+        checks and autocomplete.
+      </li>
+      <li>
+        <strong>Art pipeline:</strong> maps are drawn in Tiled and sprites in
+        Aseprite, both picked up by the generator.
+      </li>
+    </ul>
+    <hr />
+    <h1>What works so far</h1>
+    <ul>
+      <li>
+        Visual novel scenes: dialogue, choices, portraits, backgrounds,
+        effects, backlog, rewind, skip and auto mode.
+      </li>
+      <li>Routes with an auto-generated flowchart, chapters and endings.</li>
+      <li>
+        Maps with NPCs, doors, props, time of day and lighting, plus fast
+        travel.
+      </li>
+      <li>
+        Gameplay systems: items, money, shops, quests, a party and turn-based
+        battles.
+      </li>
+      <li>Saves with autosave and backups, settings and translations.</li>
+      <li>A dev panel with hot reload, and tests for the engine.</li>
+    </ul>
+    <p>
+      Most of these are first versions and will keep changing as more games are
+      built with the engine and gaps show up.
+    </p>
+    <h5>
+      The engine comes with a guide that has step by step recipes for things
+      like a talking NPC, a shop or a battle area.
+    </h5>
+  </body>
+</html>

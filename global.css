@@ -155,3 +155,13 @@ input {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/* Hint marker for elements with a hover title (CSS only, so it stays out of page text) */
+em[title]::after,
+a[title]::after {
+  content: "?";
+  content: "?" / "";
+  vertical-align: super;
+  font-size: smaller;
+  line-height: 0;
+}
